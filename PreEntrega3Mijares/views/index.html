@@ -4,25 +4,22 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tercera Entrega</title>
     <link rel="stylesheet" href="styles.css" />
-
-    <title>Entrega 3</title>
   </head>
   <body>
-    <div class="greeting">
-      <h1>Bienvenido!</h1>
-    </div>
-    <form action="" class="form">
-      <h1 class="title">Datos Básicos</h1>
-      <input type="text" class="form_item" />
-      <label class="label_form" for="">Nombre</label>
-      <input type="text" class="form_item" />
-      <label class="label_form" for="">Apellido</label>
-      <input type="text" class="form_item" />
-      <label class="label_form" for="">Correo</label>
-      <input type="text" class="form_item" />
-      <label class="label_form" for="">Teléfono</label>
-      <input type="submit" class="btn" value="Enviar" />
+    <h1>Ingresa tu Nombre</h1>
+    <form id="formulario">
+      <label for="cliente">Nombre completo</label>
+      <br />
+      <textarea id="cliente"></textarea>
+      <div>
+        <input type="submit" value="Enviar" />
+      </div>
+      <div>
+        <h2>Lista de clientes en espera</h2>
+        <div id="lista-clientes"></div>
+      </div>
     </form>
     <script src="/index.js"></script>
   </body>
