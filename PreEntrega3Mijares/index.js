@@ -50,7 +50,7 @@ const agregarCliente = (evt) => {
   const cliente = document.querySelector('#cliente').value;
   console.log(cliente);
   if (cliente.length <= 2) {
-    alert('Debe escribir el nombre completo, intente de nuevo ');
+    document.write('Debe escribir el nombre completo, intente de nuevo ');
     return;
   }
 
