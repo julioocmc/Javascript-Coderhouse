@@ -19,7 +19,7 @@ html {
 }
 
 :root {
-  --orange: #f7f91f;
+  --orange: #f79f1f;
   --text-color-1: #444;
   --text-color-2: #666;
   --bg-color-1: #fff;
@@ -29,6 +29,29 @@ html {
 
 body {
   background: var(--bg-color-2);
+}
+
+.heading {
+  text-align: center;
+  padding-bottom: 2rem;
+  color: var(--text-color-1);
+  font-size: 4rem;
+}
+
+.heading span {
+  position: relative;
+  z-index: 0;
+}
+
+.heading span::before {
+  content: '';
+  position: absolute;
+  left: 0;
+  z-index: -1;
+  background: var(--orange);
+  height: 100%;
+  width: 100%;
+  clip-path: polygon(0 90%, 100% 83%, 100% 100%, 0% 100%);
 }
 
 /*------------- Home -------------*/
@@ -75,7 +98,7 @@ section {
   padding: 0.8rem 3rem;
   font-size: 1.7rem;
   color: #fff;
-  background: #ab6806;
+  background: #ab8d06;
   border-radius: 0.5rem;
   cursor: pointer;
 }
@@ -110,4 +133,59 @@ section {
   text-transform: none;
   width: 100%;
   padding: 1rem;
+}
+
+.form-container form .btn {
+  flex: 1 1 23rem;
+  margin-top: 25px;
+}
+
+/*----------------- Platos ---------- */
+
+.mainFood .box-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
+  gap: 1.5rem;
+}
+
+.mainFood .box-container .box {
+  background: var(--bg-color-1);
+  border-radius: 0.5rem;
+  box-shadow: var(--box-shadow);
+}
+
+.mainFood .box-container .box .image {
+  height: 20rem;
+  width: 100%;
+  padding: 1.5rem;
+  position: relative;
+}
+
+.mainFood .box .image img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  border-radius: 0.5rem;
+}
+
+.mainFood .box .image h3 {
+  position: absolute;
+  top: 2.5rem;
+  left: 2.5rem;
+  font-size: 2rem;
+  color: #fff;
+  background: rgba(0, 0, 0, 0.5);
+  font-weight: lighter;
+  border-radius: 0.5rem;
+  padding: 0.5rem 1.5rem;
+}
+
+.mainFood .box .image h3 i {
+  color: var(--orange);
+}
+
+.mainFood .box-container .box .price {
+  font-weight: 600;
+  color: var(--text-color-1);
+  font-size: 2.5rem;
 }
