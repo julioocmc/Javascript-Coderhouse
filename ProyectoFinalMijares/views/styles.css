@@ -356,3 +356,53 @@ li {
   padding-right: 0.5rem;
   color: var(--orange);
 }
+
+/*=============== Footer =============== */
+
+.footer {
+  background: var(--bg-color-1);
+}
+
+.footer .box-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(22rem, 1fr));
+  gap: 1.5rem;
+}
+
+.footer .box-container .box h3 {
+  font-size: 2.5rem;
+  color: var(--text-color-1);
+  padding: 1rem 0;
+}
+
+.footer .box-container .box a {
+  display: block;
+  font-size: 1.5rem;
+  color: var(--text-color-2);
+  padding: 1rem 0;
+}
+
+.footer .box-container .box a i {
+  padding-right: 0.5rem;
+  color: var(--orange);
+}
+
+.footer .box-container .box a:hover i {
+  padding-right: 2rem;
+}
+
+/* =========== Copyright ======== */
+
+.rights {
+  font-size: 2rem;
+  text-align: center;
+  border-top: 0.1rem solid var(--text-color-2);
+  padding: 1rem;
+  padding-top: 2rem;
+  margin-top: 2rem;
+  color: var(--text-color-2);
+}
+
+.rights span {
+  color: var(--orange);
+}
