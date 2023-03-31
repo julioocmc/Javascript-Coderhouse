@@ -11,6 +11,7 @@
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"
     />
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11.1.4/dist/sweetalert2.all.min.js"></script>
   </head>
   <body>
     <!------------- Navbar ------------->
@@ -29,6 +30,7 @@
         <div id="share-btn" class="fas fa-share"></div>
         <div id="user-btn" class="fas fa-user"></div>
         <div id="menu-btn" class="fas fa-bars"></div>
+        <div id="weather"></div>
       </div>
 
       <nav class="navbar">
@@ -65,18 +67,18 @@
     <!---- Ordenes ---->
 
     <section class="form-container">
-      <form action="">
+      <form id="order-form" action="">
         <div class="inputBox">
           <span>Donde</span>
-          <input type="text" placeholder="Buscar" />
+          <input type="text" placeholder="Buscar" required />
         </div>
         <div class="inputBox">
           <span>Fecha</span>
-          <input type="date" />
+          <input type="date" required />
         </div>
         <div class="inputBox">
           <span>Hora</span>
-          <input type="time" />
+          <input type="time" required />
         </div>
         <input type="submit" value="Ordena Ahora!" class="btn" />
       </form>
